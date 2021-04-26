@@ -7,8 +7,8 @@ import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 // PAGES
 import Home from "./pages/Home";
-import Product from "./pages/Product";
-import Products from "./pages/Products";
+import Product from "./components/Product";
+import Shopping from "./pages/Shopping";
 import Cart from "./pages/Cart";
 
 
@@ -25,8 +25,8 @@ function App() {
         <main>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/products/" component={Products} />
-            <Route path="/products/:id" component={Product} />
+            <Route exact path="/shopping/" component={Shopping} />
+            <Route path="/shopping/:id" component={Product} />
             <Route path="/cart" component={Cart} />
           </Switch>
         </main>

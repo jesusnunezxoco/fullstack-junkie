@@ -7,7 +7,7 @@ export default function SideDrawer({ show, handleToggle }) {
       <Link to="/">
         <i className="fas fa-home"></i>Home
       </Link>
-      <Link to="/products">
+      <Link to="/shopping">
         <i className="fas fa-store"></i>Shopping
       </Link>
       <Link to="/cart" className={style.cart__link}>
