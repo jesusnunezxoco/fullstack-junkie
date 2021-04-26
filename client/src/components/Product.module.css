@@ -58,18 +58,24 @@
 
 @media (max-width: 1232px) {
   .product {
-    width: 360px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1232px) {
+  .product {
+    width: 300px;
   }
 }
 
 @media (max-width: 950px) {
   .product {
-    width: 430px;
+    width: 350px;
   }
 }
 
-@media (max-width: 625px) {
+@media (max-width: 720px) {
   .product {
-    width: 550px;
+    width: 100vw;
   }
 }
