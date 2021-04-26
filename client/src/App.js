@@ -1,22 +1,27 @@
 import "./App.css";
+import { useState } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 // COMPONENTS
-import Navbar from "./components/Navbar"
-import Backdrop from "./components/Backdrop"
+import Navbar from "./components/Navbar";
+import Backdrop from "./components/Backdrop";
+import SideDrawer from "./components/SideDrawer";
 // PAGES
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import Products from "./pages/Products";
 import Cart from "./pages/Cart";
 
+
+
 function App() {
+  const [sideToggle, setSideToggle] = useState(false) 
+  const handleToggle = () => setSideToggle(!sideToggle)
   return (
     <Router>
       <div className="app">
-        {/* NAVBAR */}
-        <Navbar/>
-        {/* SideDrawer */}
-        <Backdrop/>
+        <Navbar handleToggle={handleToggle}/>
+        <SideDrawer show={sideToggle} handleToggle={handleToggle}/>
+        <Backdrop show={sideToggle} handleToggle={handleToggle}/>
         <main>
           <Switch>
             <Route exact path="/" component={Home} />
