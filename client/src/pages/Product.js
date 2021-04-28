@@ -1,5 +1,5 @@
 import React from "react";
-import s from "./ProductPage.module.css";
+import s from "./Product.module.css";
 import defaultPic from "../assets/kirby.jpg";
 export default function ProductPage() {
   return (

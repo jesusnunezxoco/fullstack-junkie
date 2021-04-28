@@ -7,7 +7,7 @@ import Backdrop from "./components/Backdrop";
 import SideDrawer from "./components/SideDrawer";
 // PAGES
 import Home from "./pages/Home";
-import ProductPage from "./pages/ProductPage";
+import Product from "./pages/Product";
 import Shopping from "./pages/Shopping";
 import Cart from "./pages/Cart";
 
@@ -26,7 +26,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/shopping" component={Shopping} />
-            <Route path="/products/:id" component={ProductPage} />
+            <Route path="/products/:id" component={Product} />
             <Route path="/cart" component={Cart} />
           </Switch>
         </main>
