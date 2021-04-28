@@ -4,15 +4,15 @@ import s from "./CartItem.module.css";
 import defaultPic from "../assets/kirby.jpg";
 export default function CartItem() {
   return (
-    <div className="cart__item">
-      <div className="cartitem__image">
+    <div className={s.cartitem}>
+      <div className={s.cartitem__image}>
         <img src={defaultPic} alt="cart item" />
       </div>
-      <Link to={`/products/${111}`}>
-        <h3>Product Name</h3>
+      <Link to={`/products/${111}`} className={s.cartitem__name}>
+        <h3 >Product Name</h3>
       </Link>
-      <p className={s.cartitem__price}> </p>
-      <select>
+      <p className={s.cartitem__price}>$499.99</p>
+      <select className={s.cartitem__select}>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
